@@ -1,31 +1,38 @@
 import logo from '../images/logo/ynkore_logo.png';
+import CartWidget from './CartWidget';
 
 function NavBar() {
     return (
         
       <div className="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src={logo} className="App-logo logo" alt="logo" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        <nav className="navbar-expand-lg navbar-light bg-light">
+            <div className="container-fluid d-flex justify-content-between color">
+                <div>
+                    <a className="navbar-brand" href="#">
+                        <img src={logo} className="App-logo logo" alt="logo" />
+                    </a>
+                </div>
+                
+                <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <a className="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Productos</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Productos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes somos</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Quienes somos</a>
                         </li>
                     </ul>
                 </div>
+
+                <div>
+                    <CartWidget/>
+                </div>
+
             </div>
+            
         </nav>
         
       </div>
