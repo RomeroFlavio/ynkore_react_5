@@ -4,7 +4,7 @@ import CartWidget from './CartWidget';
 function NavBar() {
     return (
         
-      <div className="container-fluid">
+    <div className="container-fluid">
         <nav className="navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid d-flex justify-content-between color">
                 <div>
@@ -30,12 +30,9 @@ function NavBar() {
                 <div>
                     <CartWidget/>
                 </div>
-
             </div>
-            
         </nav>
-        
-      </div>
+    </div>
 
     );
   }
