@@ -1,6 +1,5 @@
 import ItemCount from "./ItemCount";
 
-
 function Tarjeta() {
     const onAdd = (count) => {
         alert("Compraste: " + count)
