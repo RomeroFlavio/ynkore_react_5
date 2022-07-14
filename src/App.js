@@ -5,8 +5,7 @@ import './css/NavBar.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './containers/ItemListContainer';
 import Tarjeta from './components/Tarjeta';
-import Item from './components/Item';
-import ItemList from './components/ItemList';
+
 
 function App() {
     return (
@@ -14,11 +13,8 @@ function App() {
         <header className="App-header">
             <NavBar/>
         </header>
-        <main className="App-main d-flex flex-column">
-            <ItemListContainer saludo='Coders trabajando: Proximamente mas contenido'>
-            </ItemListContainer>
-                
-                <ItemList/>
+        <main className="App-main d-flex flex-column flex-wrap">
+            <ItemListContainer saludo='Coders trabajando: Proximamente mas contenido'/>
 
             <Tarjeta/>
         </main>

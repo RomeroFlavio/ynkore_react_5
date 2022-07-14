@@ -12,7 +12,6 @@ function ItemCount({stock, initial, onAdd}) {
         count > initial ? setCount(count - 1) : alert("Compra minima: " + initial)
     }
 
-
     return (
         
     <>
